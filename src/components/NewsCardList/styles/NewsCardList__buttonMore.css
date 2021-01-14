@@ -7,4 +7,23 @@
   border-radius: 80px;
   border: 0;
   cursor: pointer;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  /* main/primary */
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 800px) {
+  .NewsCardList__buttonMore {
+    width: 240px;
+    height: 56px;
+    margin: 0 auto 40px;
+  }
 }

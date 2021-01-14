@@ -1,0 +1,16 @@
+.Search__form {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  width: 608px;
+
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__form {
+    margin-top: 48px;
+    width: 448px;
+  }
+}

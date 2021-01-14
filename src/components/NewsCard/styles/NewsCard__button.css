@@ -22,3 +22,10 @@
 .NewsCard__button_bookmark {
   background-image: url(../../../images/bookmark.svg);
 }
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__button {
+    top: 8px;
+    right: 8px;
+  }
+}

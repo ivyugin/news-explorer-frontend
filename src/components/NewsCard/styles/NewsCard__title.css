@@ -13,3 +13,10 @@
 
   color: #1A1B22;
 }
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

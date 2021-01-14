@@ -1,8 +1,9 @@
-@import url(./Search_title.css);
-@import url(./Search_subtitle.css);
-@import url(./Search_form-input.css);
-@import url(./Search_form-button.css);
-@import url(./Search_form.css);
+@import url(./styles/Search__title.css);
+@import url(./styles/Search__subtitle.css);
+@import url(./styles/Search__form-input.css);
+@import url(./styles/Search__form-button.css);
+@import url(./styles/Search__form.css);
+@import url(./styles/Search__body.css);
 
 .Search {
   padding-top: 1px;
@@ -12,4 +13,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+}
+
+@media screen and (max-width: 800px) {
+  .Search {
+    height: 400px;
+  }
 }

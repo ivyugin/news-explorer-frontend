@@ -1,4 +1,4 @@
-.Search_form-input {
+.Search__form-input {
   position: absolute;
   width: 608px;
   height: 64px;
@@ -13,4 +13,22 @@
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 100px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+
+  /* main/primary */
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__form-input {
+    width: 448px;
+    height: 56px;
+  }
 }

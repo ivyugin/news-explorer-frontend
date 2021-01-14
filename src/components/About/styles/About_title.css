@@ -1,5 +1,5 @@
 .About_title {
-  font-style: normal;
+  font-family: Roboto Slab;
   font-weight: normal;
   font-size: 40px;
   line-height: 46px;
@@ -11,4 +11,11 @@
   color: #1A1B22;
 
   margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .About__description-container {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

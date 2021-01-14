@@ -1,6 +1,12 @@
 .NewsCard__image {
-  width: 400px;
+  width: 100%;
   height: 272px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__image {
+    height: 150px;
+  }
 }

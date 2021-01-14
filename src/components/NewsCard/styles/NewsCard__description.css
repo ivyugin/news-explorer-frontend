@@ -19,3 +19,10 @@
   -webkit-line-clamp: 5;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__description {
+    margin-top: 10px;
+    -webkit-line-clamp: 4;
+  }
+}

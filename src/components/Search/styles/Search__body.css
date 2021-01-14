@@ -1,0 +1,14 @@
+.Search__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  width: 608px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__body {
+    width: 448px;
+  }
+}

@@ -1,5 +1,5 @@
 .About_description {
-  font-style: normal;
+  font-family: Roboto;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -10,4 +10,11 @@
   max-width: 600px;
 
   margin-top: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .About_description {
+    margin-top: 16px;
+    max-width: 424px;
+  }
 }

@@ -16,3 +16,9 @@
 .Footer__link:nth-child(1) {
   margin-left: 0;
 }
+
+@media screen and (max-width: 800px) {
+  .Footer__link {
+    margin-left: 25px;
+  }
+}

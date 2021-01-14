@@ -1,4 +1,11 @@
 .About__description-container {
-  margin-top: 131px;
+  margin-top: 10%;
   margin-left: 56px;
+  margin-right: 7.5%
+}
+
+@media screen and (max-width: 800px) {
+  .About__description-container {
+    margin-left: 32px;
+  }
 }

@@ -1,0 +1,23 @@
+.Search__title {
+  width: 600px;
+  margin-top: 160px;
+
+  font-family: Roboto Slab;
+  font-weight: normal;
+
+  font-size: 60px;
+  line-height: 64px;
+  color: white;
+
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__title {
+    width: 385px;
+    margin-top: 104px;
+
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
