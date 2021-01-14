@@ -1,6 +1,6 @@
 import NewsCard from '../NewsCard/NewsCard';
 
-export default function NewsCardListBody({ NewsCards, Main }) {
+export default function NewsCardListBody({ NewsCards }) {
   return (
     <div className="NewsCardListBody">
       <ul className="NewsCardListBody__grid">
@@ -9,7 +9,6 @@ export default function NewsCardListBody({ NewsCards, Main }) {
             <NewsCard
               key = {card._id}
               card = {card}
-              Main = {Main}
             />
           );
         })}

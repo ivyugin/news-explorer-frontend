@@ -8,13 +8,29 @@
   font-size: 18px;
 
   height: 100%;
-  box-shadow: inset 0px -3px 0px rgba(255, 255, 255);
-  background: transparent;
-  border: none;
+  padding-top: 30px;
+
+  border-color: #FFFFFF;
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  white-space: nowrap;
 }
 
 .Navigation__link_light {
   color: #1A1B22;
+  border-color: #1A1B22;
+}
 
-  box-shadow: inset 0px -3px 0px #1A1B22;
+.Navigation__link_activ {
+  border-bottom: 3px solid;
+  cursor: default;
+}
+
+@media screen and (max-width: 800px) {
+  .Navigation__link {
+    font-size: 16px;
+    padding-top: 22px;
+  }
 }

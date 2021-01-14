@@ -1,11 +1,21 @@
-export default function NewsCard({ card, Main }) {
+import {Route, Switch, Link, useHistory} from 'react-router-dom';
+
+export default function NewsCard({ card }) {
   return (
     <div className='NewsCard'>
       <img className='NewsCard__image' src={card.urlToImage} alt='News Image' />
-      <button
-        className={`NewsCard__button
-          ${Main ? 'NewsCard__button_bookmark' : 'NewsCard__button_trash'}`}>
-      </button>
+      <Switch>
+
+        <Route path='/saved-news'>
+          <button className='NewsCard__button NewsCard__button_trash'>
+          </button>
+        </Route>
+        <Route path='/'>
+          <button className='NewsCard__button NewsCard__button_bookmark'>
+          </button>
+        </Route>
+
+      </Switch>
       <div className='NewsCard__body'>
         <p className='NewsCard__time'>{card.time}</p>
         <h3 className='NewsCard__title'>{card.title}</h3>

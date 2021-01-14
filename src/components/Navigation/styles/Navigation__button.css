@@ -7,7 +7,7 @@
   box-sizing: border-box;
   border-radius: 100px;
 
-  margin-right: 40px;
+  margin-right: 7.5%;
 
   cursor: pointer;
 }
@@ -15,4 +15,10 @@
 .Navigation__button_light {
   border: 1px solid #1A1B22;
   color: #1A1B22;
+}
+
+@media screen and (max-width: 800px) {
+  .Navigation__button {
+    font-size: 16px;
+  }
 }
