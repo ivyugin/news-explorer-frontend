@@ -1,0 +1,7 @@
+@import url(./styles/NewsCardListBody__grid.css);
+
+.NewsCardListBody {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #F5F6F7;
+}

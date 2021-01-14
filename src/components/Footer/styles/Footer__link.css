@@ -1,0 +1,18 @@
+.Footer__link {
+  margin-left: 30px;
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  /* main/primary */
+
+  color: #1A1B22;
+}
+
+.Footer__link:nth-child(1) {
+  margin-left: 0;
+}

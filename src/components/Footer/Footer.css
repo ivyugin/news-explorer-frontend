@@ -1,0 +1,14 @@
+@import url(./styles/Footer__copyright.css);
+@import url(./styles/Footer__link.css);
+@import url(./styles/Footer__links.css);
+
+.Footer {
+  width: 85%;
+  height: 80px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

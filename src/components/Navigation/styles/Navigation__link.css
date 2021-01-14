@@ -1,0 +1,20 @@
+.Navigation__link {
+  color: white;
+  margin-right: 16px;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  height: 100%;
+  box-shadow: inset 0px -3px 0px rgba(255, 255, 255);
+  background: transparent;
+  border: none;
+}
+
+.Navigation__link_light {
+  color: #1A1B22;
+
+  box-shadow: inset 0px -3px 0px #1A1B22;
+}

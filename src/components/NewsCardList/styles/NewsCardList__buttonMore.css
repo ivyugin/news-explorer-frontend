@@ -1,0 +1,10 @@
+.NewsCardList__buttonMore {
+  display: block;
+  width: 288px;
+  height: 64px;
+  margin: 0 auto 80px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  border: 0;
+  cursor: pointer;
+}

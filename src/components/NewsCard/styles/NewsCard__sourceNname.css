@@ -1,0 +1,19 @@
+.NewsCard__sourceNname{
+  position: absolute;
+  bottom: 0;
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  /* simulator/gray/text */
+
+  color: #B6BCBF;
+}

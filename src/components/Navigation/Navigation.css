@@ -1,0 +1,9 @@
+@import url(./styles/Navigation__link.css);
+@import url(./styles/Navigation__button.css);
+
+.Navigation {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}

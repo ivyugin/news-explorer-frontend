@@ -1,0 +1,13 @@
+@import url(./styles/About_title.css);
+@import url(./styles/About_description.css);
+@import url(./styles/About__avatar.css);
+@import url(./styles/About__description-container.css);
+
+.About {
+  width: 100%;
+  height: 624px;
+  background: #FFFFFF;
+
+  display: flex;
+  flex-direction: row;
+}

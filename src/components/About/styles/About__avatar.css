@@ -1,0 +1,9 @@
+.About__avatar {
+  width: 32vw;
+  height: 32vw;
+  border-radius: 1000px;
+  object-fit: cover;
+
+  margin-left: 104px;
+  margin-top: 80px;
+}
