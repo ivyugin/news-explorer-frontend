@@ -1,0 +1,6 @@
+.PopupWithForm__inputControl {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  margin-top: 13px;
+}

@@ -1,9 +1,9 @@
-import {Route, Switch, Link, useHistory} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 export default function NewsCard({ card }) {
   return (
     <div className='NewsCard'>
-      <img className='NewsCard__image' src={card.urlToImage} alt='News Image' />
+      <img className='NewsCard__image' src={card.urlToImage} alt='News pic' />
       <Switch>
 
         <Route path='/saved-news'>

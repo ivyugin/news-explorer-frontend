@@ -22,3 +22,38 @@
     margin-left: 25px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .Footer__link {
+      margin-left: 0;
+    }
+
+  .Footer__link_main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .Footer__link_praktikum {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .Footer__link_github {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .Footer__link_facebook {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+

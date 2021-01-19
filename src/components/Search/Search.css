@@ -20,3 +20,9 @@
     height: 400px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .Search {
+    height: 536px;
+  }
+}

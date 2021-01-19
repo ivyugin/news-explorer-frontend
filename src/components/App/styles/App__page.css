@@ -1,0 +1,6 @@
+.App__page {}
+
+.App__page_disableScroll {
+  height: 100vh;
+  overflow: hidden;
+}

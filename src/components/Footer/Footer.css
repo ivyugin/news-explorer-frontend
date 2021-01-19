@@ -3,7 +3,7 @@
 @import url(./styles/Footer__links.css);
 
 .Footer {
-  width: 85%;
+  width: 90%;
   height: 80px;
   margin: auto;
 
@@ -11,10 +11,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
 }
 
 @media screen and (max-width: 800px) {
   .Footer {
     height: 64px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Footer {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 70% 10% 10%;
+    grid-template-rows: 50px 50px 50px;
   }
 }

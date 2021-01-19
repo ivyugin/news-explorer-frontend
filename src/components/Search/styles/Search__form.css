@@ -14,3 +14,23 @@
     width: 448px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .Search__form {
+    width: 90vw;
+    margin: 48px auto 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Search__form {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Search__form {
+    margin-top: 50px;
+  }
+}

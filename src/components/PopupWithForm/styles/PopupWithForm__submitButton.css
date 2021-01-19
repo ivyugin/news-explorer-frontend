@@ -1,0 +1,35 @@
+.PopupWithForm__submitButton {
+  margin: 26px auto 0;
+
+  width: 94%;
+  height: 64px;
+
+  background: #E6E8EB;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  border: 0;
+
+
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  /* main/white */
+
+  color: #FFFFFF;
+}
+
+.PopupWithForm__submitButton:focus {
+  outline: none;
+}
+
+.PopupWithForm__submitButton_active:hover {
+  background: #347EFF;
+}
+
+.PopupWithForm__submitButton_active {
+  cursor: pointer;
+  background: #2F71E5;
+}

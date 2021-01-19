@@ -26,9 +26,23 @@
   color: #1A1B22;
 }
 
+.Search__form-input:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 800px) {
   .Search__form-input {
-    width: 448px;
+    width: 90vw;
+    max-width: 448px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Search__form-input {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
     height: 56px;
   }
 }

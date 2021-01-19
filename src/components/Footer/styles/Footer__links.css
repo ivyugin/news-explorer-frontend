@@ -3,3 +3,10 @@ display: flex;
 flex-direction: row;
 align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .Footer__links {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+}

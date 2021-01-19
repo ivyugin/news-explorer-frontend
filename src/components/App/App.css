@@ -1,3 +1,5 @@
+@import url('./styles/App__page.css');
+
 .App {
   font-family: 'Roboto', 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

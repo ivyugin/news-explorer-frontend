@@ -1,0 +1,27 @@
+.Navigation__openMenu {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/menu-light.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border: 0;
+  cursor: pointer;
+
+  margin-right: 7.5vw;
+}
+
+.Navigation__openMenu {
+  outline: none;
+}
+.Navigation__openMenu_dark {
+  background-image: url(../../../images/menu-dark.svg);
+}
+
+@media screen and (max-width: 600px) {
+  .Navigation__openMenu {
+    display: block;
+  }
+}

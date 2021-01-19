@@ -1,15 +1,20 @@
-import {Route, Switch, Link, useHistory} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 
-export default function Header() {
+export default function Header({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOpen }) {
   return (
     <Switch>
       <Route path='/saved-news'>
         <header className='Header Header_light'>
-          <div className='Header__logo Header__logo_light'>
+          <div className={`Header__logo ${!isMenuOpen && 'Header__logo_light'}`}>
             NewsEexplorer
           </div>
-          <Navigation />
+          <Navigation
+            isMenuOpen={isMenuOpen}
+            onOpenMenu={onOpenMenu}
+            onClose={onClose}
+            onLoginPopupOpen={onLoginPopupOpen}
+          />
         </header>
       </Route>
 
@@ -18,7 +23,12 @@ export default function Header() {
           <div className='Header__logo'>
             NewsEexplorer
           </div>
-          <Navigation />
+          <Navigation
+            isMenuOpen={isMenuOpen}
+            onOpenMenu={onOpenMenu}
+            onClose={onClose}
+            onLoginPopupOpen={onLoginPopupOpen}
+          />
         </header>
       </Route>
     </Switch>

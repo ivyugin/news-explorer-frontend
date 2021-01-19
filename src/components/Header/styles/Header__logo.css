@@ -6,9 +6,23 @@
   font-size: 20px;
   line-height: 24px;
 
-  margin-left: 7.5%;
+  margin-left: 7.5vw;
+
+  z-index: 1;
 }
 
 .Header__logo_light {
   color: #1A1B22;
+}
+
+@media screen and (max-width: 800px) {
+  .Header__logo {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Header__logo {
+    font-size: 16px;
+  }
 }

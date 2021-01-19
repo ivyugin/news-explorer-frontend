@@ -1,5 +1,9 @@
 @import url(./styles/Navigation__link.css);
 @import url(./styles/Navigation__button.css);
+@import url(./styles/Navigation__openMenu.css);
+@import url(./styles/Navigation__menu.css);
+@import url(./styles/Navigation__closeMenu.css);
+@import url(./styles/Navigation__brline.css);
 
 .Navigation {
   display: flex;

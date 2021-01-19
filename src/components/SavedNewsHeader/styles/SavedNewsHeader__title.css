@@ -11,3 +11,15 @@
 
   color: rgba(26, 27, 34, 0.5);
 }
+
+@media screen and (max-width: 800px) {
+  .SavedNewsHeader__title {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SavedNewsHeader__title {
+    margin-top: 64px;
+  }
+}

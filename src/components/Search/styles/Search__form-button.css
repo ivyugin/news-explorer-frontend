@@ -21,9 +21,26 @@
   color: #FFFFFF;
 }
 
+.Search__form-button:focus {
+  outline: none;
+}
+
+.Search__form-button:hover {
+  background: #347EFF;
+}
+
 @media screen and (max-width: 800px) {
   .Search__form-button {
     height: 56px;
     width: 160px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Search__form-button {
+    height: 56px;
+    width: 90vw;
+    position: relative;
+    margin: 16px auto 32px;
   }
 }

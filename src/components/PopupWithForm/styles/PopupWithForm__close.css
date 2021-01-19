@@ -1,0 +1,38 @@
+.PopupWithForm__close {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-image: url(./../../../images/popup-close-btn.svg);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: opacity 0.5s ease-out;
+}
+
+.PopupWithForm__close:focus {
+  outline: none;
+}
+
+.PopupWithForm__close:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 500px) {
+  .PopupWithForm__close {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PopupWithForm__close {
+    right: 22px;
+  }
+}

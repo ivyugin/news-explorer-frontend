@@ -10,7 +10,7 @@ const NewsCards = [{
   time: '2 августа, 2019',
 },
 {
-  _id: 123,
+  _id: 124,
   sourceNname: 'Lenta',
   title: 'title',
   description: 'description',

@@ -10,6 +10,7 @@ export default function SearchForm() {
         </p>
         <form className='Search__form'>
           <input
+            required
             className='Search__form-input'
             placeholder='Введите тему новости'
           />
