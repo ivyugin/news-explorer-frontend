@@ -3,7 +3,7 @@ import NewsCard from '../NewsCard/NewsCard';
 export default function NewsCardListBody({ NewsCards }) {
   return (
     <div className="NewsCardListBody">
-      <ul className="NewsCardListBody__grid">
+      <div className="NewsCardListBody__grid">
         {NewsCards.map((card) => {
           return (
             <NewsCard
@@ -12,7 +12,7 @@ export default function NewsCardListBody({ NewsCards }) {
             />
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }
