@@ -1,0 +1,14 @@
+@import url(./styles/NewsCard__image.css);
+@import url(./styles/NewsCard__time.css);
+@import url(./styles/NewsCard__title.css);
+@import url(./styles/NewsCard__description.css);
+@import url(./styles/NewsCard__sourceNname.css);
+@import url(./styles/NewsCard__body.css);
+@import url(./styles/NewsCard__button.css);
+
+.NewsCard {
+  position: relative;
+
+  border-radius: 16px;
+  background: #FFFFFF;
+}

@@ -1,0 +1,24 @@
+.Navigation__closeMenu {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/menu-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border: 0;
+  cursor: pointer;
+
+  margin-right: 7.5vw;
+  z-index: 1;
+
+}
+
+.Navigation__closeMenu {
+  outline: none;
+}
+
+.Navigation__closeMenu-open {
+  display: block;
+}

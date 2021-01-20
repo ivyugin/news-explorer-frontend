@@ -1,0 +1,32 @@
+.NewsCardListBody__grid {
+  width: 85%;
+  max-width: 1200px;
+  margin: 62px auto 62px;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 27vw);
+  grid-auto-rows: auto;
+  grid-gap: 16px;
+
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .NewsCardListBody__grid {
+    margin: 32px auto 32px;
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .NewsCardListBody__grid {
+    grid-template-columns: repeat(2, 40vw);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .NewsCardListBody__grid {
+    grid-template-columns: repeat(1, 80vw);
+  }
+}

@@ -1,0 +1,39 @@
+@import url(./styles/PopupWithForm__close.css);
+@import url(./styles/PopupWithForm__background.css);
+@import url(./styles/PopupWithForm__form.css);
+@import url(./styles/PopupWithForm__title.css);
+@import url(./styles/PopupWithForm__inputName.css);
+@import url(./styles/PopupWithForm__inputControl.css);
+@import url(./styles/PopupWithForm__error.css);
+@import url(./styles/PopupWithForm__submitButton.css);
+@import url(./styles/PopupWithForm__signin.css);
+@import url(./styles/PopupWithForm__input.css);
+
+.PopupWithForm {
+  display: none;
+
+  width: 380px;
+
+  position: absolute;
+  top: calc(50vh - 215px);
+  left: calc(50vw - 190px);
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.PopupWithForm_open {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .PopupWithForm {
+    width: 100vw;
+    height: calc(100vh - 56px);
+
+    top: 56px;
+    left: 0;
+
+  }
+}

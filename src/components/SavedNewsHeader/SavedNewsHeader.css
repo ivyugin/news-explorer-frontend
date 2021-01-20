@@ -1,0 +1,9 @@
+@import url(./styles/SavedNewsHeader__title.css);
+@import url(./styles/SavedNewsHeader__newsCount.css);
+@import url(./styles/SavedNewsHeader__keyword.css);
+
+.SavedNewsHeader {
+  width: 85%;
+  padding-top: 1px;
+  margin: 0 auto;
+}

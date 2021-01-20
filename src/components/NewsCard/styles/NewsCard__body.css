@@ -1,0 +1,12 @@
+.NewsCard__body {
+  height: 260px;
+  position: relative;
+  margin: 20px 24px 24px 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__body {
+    margin: 16px;
+    height: 240px;
+  }
+}

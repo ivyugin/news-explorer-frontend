@@ -1,0 +1,15 @@
+.PopupWithForm__signin {
+  margin: 16px auto 28px;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.PopupWithForm__signin_link {
+  color: #2F71E5;
+  cursor: pointer;
+}

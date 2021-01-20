@@ -1,0 +1,51 @@
+@import url(./vendor/normalize.css);
+@import url(./components/App/App.css);
+@import url(./components/Search/Search.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Navigation/Navigation.css);
+@import url(./components/NewsCardList/NewsCardList.css);
+@import url(./components/About/About.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/NewsCard/NewsCard.css);
+@import url(./components/SavedNews/SavedNews.css);
+@import url(./components/SavedNewsHeader/SavedNewsHeader.css);
+@import url(./components/NewsCardListBody/NewsCardListBody.css);
+@import url(./components/LoginPopup/LoginPopup.css);
+@import url(./components/PopupWithForm/PopupWithForm.css);
+@import url(./components/SuccessPopup/SuccessPopup.css);
+
+@font-face {
+    font-family: 'inter-regular';
+    font-weight: 'normal';
+    src: url(./vendor/fonts/inter-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 'bold;';
+    src: url(./vendor/fonts/roboto-black.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: '500';
+    src: url(./vendor/fonts/roboto-medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 'normal';
+    src: url(./vendor/fonts/roboto-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-weight: 'normal';
+    src: url(./vendor/fonts/robotoslab-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-weight: 'normal';
+    src: url(./vendor/fonts/sourcesanspro-regular.woff) format('woff');
+}

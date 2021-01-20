@@ -1,0 +1,20 @@
+.Search__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 608px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__body {
+    width: 448px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .Search__body {
+    width: 90%;
+  }
+}

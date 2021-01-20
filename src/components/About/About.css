@@ -1,0 +1,18 @@
+@import url(./styles/About_title.css);
+@import url(./styles/About_description.css);
+@import url(./styles/About__avatar.css);
+@import url(./styles/About__description-container.css);
+
+.About {
+  width: 100%;
+  background: #FFFFFF;
+
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+  .About {
+    flex-direction: column;
+  }
+}

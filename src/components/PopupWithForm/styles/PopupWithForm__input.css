@@ -1,0 +1,15 @@
+.PopupWithForm__input {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.PopupWithForm__input:focus {
+  outline: none;
+}

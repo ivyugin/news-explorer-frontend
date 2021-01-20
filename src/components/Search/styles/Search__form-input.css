@@ -1,0 +1,48 @@
+.Search__form-input {
+  position: absolute;
+  width: 608px;
+  height: 64px;
+  padding-left: 24px;
+
+  background: #FFFFFF;
+  /* simulator/gray/divider */
+
+  border: 1px solid #D1D2D6;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 100px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+
+  /* main/primary */
+
+  color: #1A1B22;
+}
+
+.Search__form-input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Search__form-input {
+    width: 90vw;
+    max-width: 448px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Search__form-input {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+    height: 56px;
+  }
+}

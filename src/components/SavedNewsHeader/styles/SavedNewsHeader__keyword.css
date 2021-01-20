@@ -1,0 +1,21 @@
+.SavedNewsHeader__keyword {
+  margin-top: 30px;
+  margin-bottom: 56px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 800px) {
+  .SavedNewsHeader__keyword {
+    margin-top: 16px;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+}

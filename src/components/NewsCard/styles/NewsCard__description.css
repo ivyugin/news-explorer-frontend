@@ -1,0 +1,28 @@
+.NewsCard__description{
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 137% */
+
+
+  /* main/primary */
+
+  color: #1A1B22;
+
+  max-height: 110px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__description {
+    margin-top: 10px;
+    -webkit-line-clamp: 4;
+  }
+}
