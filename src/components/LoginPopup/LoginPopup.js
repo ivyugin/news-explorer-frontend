@@ -1,8 +1,10 @@
 import React from 'react';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
+import * as MainApi from '../../utils/MainApi';
 
-export default function LoginPopup({ isOpen, onClose, onSigninOpen, handleDisableScroll }) {
+export default function LoginPopup({ isOpen, onClose, onSigninOpen, handleDisableScroll, handleLogin }) {
   const [isFormValid, setIsFormValid] = React.useState(false);
+  const [serverError, setServerError] = React.useState();
 
   const [email, setEmail] = React.useState();
   const [isEmailError, setIsEmailError] = React.useState();
@@ -42,6 +44,7 @@ export default function LoginPopup({ isOpen, onClose, onSigninOpen, handleDisabl
     setEmailError('');
     setIsEmailError(true);
     setIsFormValid(false);
+    setServerError('');
   }, [isOpen]);
 
   React.useEffect(() => {
@@ -54,6 +57,25 @@ export default function LoginPopup({ isOpen, onClose, onSigninOpen, handleDisabl
 
   function handleSubmit(e) {
     e.preventDefault();
+    MainApi.login(email, password)
+     .then((res) => {
+      if (res.ok) {
+        return res
+      } else {
+        res.status === 401
+          ? setServerError('Неверный email иди пароль')
+          : setServerError('На сервере произошла ошибка')
+
+        return Promise.reject();
+      }
+     })
+     .then((res) => {
+      onClose();
+      handleLogin();
+     })
+     .catch((err) => {
+        console.log(err);
+      })
   }
 
   function handleSinginPopupOpen() {
@@ -100,6 +122,7 @@ export default function LoginPopup({ isOpen, onClose, onSigninOpen, handleDisabl
           />
           <span className={`PopupWithForm__error ${isPasswordError && 'PopupWithForm__error_active'}`}>{PasswordError}</span>
         </div>
+        <p className='PopupWithForm__serverError'>{serverError}</p>
         <button className={`PopupWithForm__submitButton ${isFormValid && 'PopupWithForm__submitButton_active'}`}>
           Войти
         </button>

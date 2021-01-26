@@ -1,0 +1,10 @@
+@import url(./styles/NoResult__img.css);
+@import url(./styles/NoResult__title.css);
+@import url(./styles/NoResult__subtitle.css);
+
+.NoResult {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: #F5F6F7;
+  width: 100%;
+}

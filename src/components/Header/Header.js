@@ -1,7 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import Navigation from '../Navigation/Navigation';
 
-export default function Header({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOpen }) {
+export default function Header({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOpen, loggedIn, handleLogout }) {
   return (
     <Switch>
       <Route path='/saved-news'>
@@ -14,6 +14,8 @@ export default function Header({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOp
             onOpenMenu={onOpenMenu}
             onClose={onClose}
             onLoginPopupOpen={onLoginPopupOpen}
+            loggedIn={loggedIn}
+            handleLogout={handleLogout}
           />
         </header>
       </Route>
@@ -28,6 +30,8 @@ export default function Header({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOp
             onOpenMenu={onOpenMenu}
             onClose={onClose}
             onLoginPopupOpen={onLoginPopupOpen}
+            loggedIn={loggedIn}
+            handleLogout={handleLogout}
           />
         </header>
       </Route>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PopupWithForm from '../PopupWithForm/PopupWithForm';
+import * as MainApi from '../../utils/MainApi';
 
 export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigninPopupOpen, handleDisableScroll }) {
   const [isFormValid, setIsFormValid] = React.useState(false);
@@ -7,6 +8,7 @@ export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigni
   const [email, setEmail] = React.useState();
   const [isEmailError, setIsEmailError] = React.useState();
   const [emailError, setEmailError] = React.useState();
+  const [serverError, setServerError] = React.useState();
 
   function onChangeEmail(e) {
     setEmail(e.target.value);
@@ -52,6 +54,7 @@ export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigni
   React.useEffect(() => {
     setEmail('');
     setPassword('');
+    setName('');
 
     setPasswordError('');
     setIsPasswordError(true);
@@ -63,6 +66,8 @@ export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigni
     setIsNameError(true);
 
     setIsFormValid(false);
+
+    setServerError('');
   }, [isOpen]);
 
   React.useEffect(() => {
@@ -75,8 +80,21 @@ export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigni
 
   function handleSubmit(e) {
     e.preventDefault();
-    onClose();
-    onSigninPopupOpen();
+    MainApi.register(email, password, name)
+      .then((res) => {
+          if (res.ok) {
+            onClose();
+            onSigninPopupOpen();
+          } else {
+            res.status === 409
+              ? setServerError('Такой пользователь уже есть')
+              : setServerError('На сервере произошла ошибка')
+          }
+
+      })
+      .catch((err) => {
+        console.log(err);
+      })
   }
 
   function handleLoginPopupOpen() {
@@ -138,6 +156,7 @@ export default function SigninPopup({ isOpen, onClose, onLoginPopupOpen, onSigni
           />
           <span className={`PopupWithForm__error ${isNameError && 'PopupWithForm__error_active'}`}>{NameError}</span>
         </div>
+        <p className='PopupWithForm__serverError'>{serverError}</p>
         <button className={`PopupWithForm__submitButton ${isFormValid && 'PopupWithForm__submitButton_active'}`}>
           Зарегистрироваться
         </button>

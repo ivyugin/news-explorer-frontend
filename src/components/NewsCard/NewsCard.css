@@ -5,10 +5,15 @@
 @import url(./styles/NewsCard__sourceNname.css);
 @import url(./styles/NewsCard__body.css);
 @import url(./styles/NewsCard__button.css);
+@import url(./styles/NewsCard__collectionButtonContainer.css);
+@import url(./styles/NewsCard__buttonHover.css);
+@import url(./styles/NewsCard__keyword.css);
 
 .NewsCard {
   position: relative;
 
   border-radius: 16px;
   background: #FFFFFF;
+  text-decoration: none;
+
 }

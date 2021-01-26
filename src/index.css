@@ -13,6 +13,8 @@
 @import url(./components/LoginPopup/LoginPopup.css);
 @import url(./components/PopupWithForm/PopupWithForm.css);
 @import url(./components/SuccessPopup/SuccessPopup.css);
+@import url(./components/Prelouder/Prelouder.css);
+@import url(./components/NoResult/NoResult.css);
 
 @font-face {
     font-family: 'inter-regular';

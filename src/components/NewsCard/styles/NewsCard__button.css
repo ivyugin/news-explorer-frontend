@@ -1,7 +1,5 @@
 .NewsCard__button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+
 
   width: 40px;
   height: 40px;
@@ -23,9 +21,14 @@
   background-image: url(../../../images/bookmark.svg);
 }
 
-@media screen and (max-width: 1000px) {
-  .NewsCard__button {
-    top: 8px;
-    right: 8px;
-  }
+.NewsCard__button_bookmark_saved {
+  background-image: url(../../../images/bookmark_saved.svg);
+}
+
+.NewsCard__button:focus {
+  outline: none;
+}
+
+.NewsCard__button:hover .NewsCard__hover {
+  display: flex;
 }

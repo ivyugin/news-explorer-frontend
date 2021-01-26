@@ -1,10 +1,26 @@
+import React from 'react';
 import {Route, Switch, Link} from 'react-router-dom';
+import {CurrentUserContext} from '../../contexts/CurrentUserContext';
+import * as MainApi from '../../utils/MainApi';
 
-export default function Navigation({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOpen }) {
+export default function Navigation({ isMenuOpen, onOpenMenu, onClose, onLoginPopupOpen, loggedIn, handleLogout }) {
+
+  const currentUser = React.useContext(CurrentUserContext);
 
   function handleLoginPopupOpen() {
-    onClose();
-    onLoginPopupOpen();
+    if (loggedIn) {
+      MainApi.logout()
+        .then((res) => {
+
+          handleLogout();
+        })
+        .catch(err => console.log(err))
+
+    } else {
+      onClose();
+      onLoginPopupOpen();
+    }
+
   }
 
   return (
@@ -27,9 +43,9 @@ export default function Navigation({ isMenuOpen, onOpenMenu, onClose, onLoginPop
               Сохранённые статьи
             </Link>
             <button
-              className={`Navigation__button ${!isMenuOpen && 'Navigation__button_light'}`}
+              className={`Navigation__button Navigation__button_logout_light ${!isMenuOpen && 'Navigation__button_light'}`}
               onClick={handleLoginPopupOpen}>
-              Авторизоваться
+              {currentUser.name}
             </button>
           </div>
           <button
@@ -54,13 +70,13 @@ export default function Navigation({ isMenuOpen, onOpenMenu, onClose, onLoginPop
             <Link
               to="./saved-news"
               onClick={onClose}
-              className='Navigation__link'>
+              className={`Navigation__link ${!loggedIn && 'Navigation__link_hide'}`}>
               Сохранённые статьи
             </Link>
             <button
-              className='Navigation__button'
+              className={`Navigation__button ${loggedIn && 'Navigation__button_logout_dark'}`}
               onClick={handleLoginPopupOpen}>
-              Авторизоваться
+              {loggedIn ? currentUser.name : 'Авторизоваться'}
             </button>
           </div>
           <button
