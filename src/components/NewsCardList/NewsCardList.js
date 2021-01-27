@@ -1,60 +1,38 @@
+import React from 'react';
 import NewsCardListBody from '../NewsCardListBody/NewsCardListBody';
 
-const NewsCards = [{
-  _id: 123,
-  sourceNname: 'Лента.ру',
-  title: 'Национальное достояние – парки',
-  description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-  urlToImage: 'https://www4.pictures.gi.zimbio.com/American+High+School+Basketball+Games+tComVKM3Dyax.jpg',
-  time: '2 августа, 2019',
-},
-{
-  _id: 124,
-  sourceNname: 'Лента.ру',
-  title: 'Национальное достояние – парки',
-  description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-  urlToImage: 'https://www4.pictures.gi.zimbio.com/American+High+School+Basketball+Games+tComVKM3Dyax.jpg',
-  time: '2 августа, 2019',
-},
-{
-  _id: 125,
-  sourceNname: 'Лента.ру',
-  title: 'Национальное достояние – парки',
-  description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-  urlToImage: 'https://www4.pictures.gi.zimbio.com/American+High+School+Basketball+Games+tComVKM3Dyax.jpg',
-  time: '2 августа, 2019',
-},
-{
-  _id: 126,
-  sourceNname: 'Лента.ру',
-  title: 'Национальное достояние – парки',
-  description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-  urlToImage: 'https://www4.pictures.gi.zimbio.com/American+High+School+Basketball+Games+tComVKM3Dyax.jpg',
-  time: '2 августа, 2019',
-},
-{
-  _id: 127,
-  sourceNname: 'Лента.ру',
-  title: 'Национальное достояние – парки',
-  description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-  urlToImage: 'https://www4.pictures.gi.zimbio.com/American+High+School+Basketball+Games+tComVKM3Dyax.jpg',
-  time: '2 августа, 2019',
-},
-];
+export default function NewsCardList({ foundArticles, searchStatus, loggedIn, handleSaveCard, savedArticles, handleDeleteArticle }) {
 
-export default function NewsCardList() {
+  const [showCardsCount, setShowCardsCount] = React.useState(3);
+  const [newsCards, setNewsCards] = React.useState(foundArticles.slice(0, showCardsCount));
+
+  React.useEffect(() => {
+    setNewsCards(foundArticles.slice(0, showCardsCount));
+  }, [foundArticles, showCardsCount])
+
+  function showMore() {
+    setShowCardsCount(showCardsCount + 3);
+  }
+
   return (
     <section className='NewsCardList'>
       <h2 className='NewsCardList__title'>
         Результаты поиска
       </h2>
       <NewsCardListBody
-        NewsCards={NewsCards}
-        Main
+        NewsCards={newsCards}
+        loggedIn={loggedIn}
+        handleSaveCard={handleSaveCard}
+        savedArticles={savedArticles}
+        handleDeleteArticle={handleDeleteArticle}
       />
-    <button className='NewsCardList__buttonMore'>
-      Показать еще
-    </button>
+      <button
+        className={`NewsCardList__buttonMore ${foundArticles.length < showCardsCount && 'NewsCardList__buttonMore_hidden'}`}
+        onClick={showMore}
+      >
+        Показать еще
+      </button>
     </section>
   );
 }
+

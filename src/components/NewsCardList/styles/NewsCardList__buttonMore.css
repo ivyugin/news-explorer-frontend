@@ -20,6 +20,14 @@
   color: #1A1B22;
 }
 
+.NewsCardList__buttonMore_hidden {
+  display: none;
+}
+
+.NewsCardList__buttonMore:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 800px) {
   .NewsCardList__buttonMore {
     width: 240px;

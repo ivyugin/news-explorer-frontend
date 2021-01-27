@@ -1,0 +1,7 @@
+.NoResult__img {
+  background-image: url(../../../images/noResult.svg);
+  background-size: contain;
+  width: 74px;
+  height: 74px;
+  margin: 86px auto 0;
+}

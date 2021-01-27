@@ -1,0 +1,14 @@
+.NoResult__title {
+  margin: 31px auto 0;
+  font-family: Roboto Slab;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+
+  text-align: center;
+
+  /* main/primary */
+
+  color: #1A1B22;
+}

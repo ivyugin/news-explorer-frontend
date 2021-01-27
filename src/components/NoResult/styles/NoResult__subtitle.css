@@ -1,0 +1,15 @@
+.NoResult__subtitle {
+  margin: 16px auto 80px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-align: center;
+
+  /* simulator/gray/text */
+
+  color: #B6BCBF;
+}

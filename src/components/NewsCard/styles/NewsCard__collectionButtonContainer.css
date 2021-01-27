@@ -1,0 +1,19 @@
+.NewsCard__collectionButtonContainer {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard__collectionButtonContainer {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.NewsCard__collectionButtonContainer:hover .NewsCard__buttonHover {
+  display: flex;
+}

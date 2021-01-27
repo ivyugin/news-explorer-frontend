@@ -19,13 +19,13 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .NewsCardListBody__grid {
     grid-template-columns: repeat(2, 40vw);
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .NewsCardListBody__grid {
     grid-template-columns: repeat(1, 80vw);
   }

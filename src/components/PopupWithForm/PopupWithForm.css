@@ -8,6 +8,7 @@
 @import url(./styles/PopupWithForm__submitButton.css);
 @import url(./styles/PopupWithForm__signin.css);
 @import url(./styles/PopupWithForm__input.css);
+@import url(./styles/PopupWithForm__serverError.css);
 
 .PopupWithForm {
   display: none;
